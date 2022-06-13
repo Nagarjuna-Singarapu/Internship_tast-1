@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  
+  <style>
+     
+:root {
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  
+}
+
+body {
+    background: #132a33;
+    color: #f7f7f7;
+    font-family: var(--font-family);
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+
+}
+body section{
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+
+
+form {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #f4f4f4;
+    display: block;
+    max-width: 800px;
+    min-width: 285px;
+    padding: 1.5rem;
+    text-align: left;
+    padding-top: 0px;
+
+}
+
+
+
+
+input,
+label,
+textarea {
+    display: block;
+    font-size: 1rem;
+    max-width: 800px;
+}
+
+input,
+textarea {
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+input[readonly],
+textarea[readonly] {
+    background-color: #555;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#signup {
+    font-size: 16px;
+    display: inline;
+    cursor: pointer;
+}
+#login {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+a:hover {
+    color: cadetblue;
+}
+
+a:active {
+    color: blueviolet ;
+   }
+#times{
+  font-size:25px;
+  padding-top: 0px;
+  padding-left: 90%;
+  border: 2px blueviolet;
+  border-radius: 50%;
+  cursor:pointer;
+}
+#click:checked~.content{
+  opacity:1;
+  visibility:visible;
+}
+
+ </style>
+</head>
+<body>
+  
+    
+    <section>
+
+          <script>
+            function showOutput() {
+              document.getElementById('output').style.display = 'block';
+              document.getElementById('reset').disabled = false;
+            }
+            
+            function hideOutput() {
+              document.getElementById('output').style.display = 'none';
+              document.getElementById('reset').disabled = true;
+            }
+            
+          </script>
+          <form onsubmit="showOutput(); return false;" onreset="hideOutput()">
+            <h2><a id="forms" href="#forms" aria-hidden="true"></a>Login
+          </h2>
+           
+              <label for="full-name">User Name</label>
+              <input id="full-name" type="text"  placeholder="Enter User Name">
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="Enter your Password">
+            
+              <p id="a-link"><a href="#forget-password">Forget password?</a></p>
+              
+              <input type="submit" value="Login" id="login">
+              <input type="submit" value="Sign up" id="signup">
+            </form>
+</section>
+</body>
+</html>

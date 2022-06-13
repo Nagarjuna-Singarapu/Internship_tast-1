@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="chain.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> chained CSS </title>
+</head>
+<body>
+  <header>
+    <h1 id="home"><span style='font-size:100px;'>&#8493;</span>hain.css</h1>
+    <p id="">The Classless Framework</p>
+      <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="https://nagarjuna-singarapu.github.io/Resume_with_Bahunya/bahunya%20resume.html">Website</a></li>
+              <li><a href="#">Git Hub</a></li>
+              <li><a href="login.html">Login <b>/</b> Signup</a></li>
+              
+            </ul>
+          </nav>
+  </header>
+  <hr>
+  <section>
+  <div>
+      <h2>Headings</h2>
+      <h1>--> This is an Heading </h1>
+      <p> --> This is the paragraph.This is the paragraph.This is the paragraph.This is the paragraph.This is the paragraph.</p>
+  
+  </div></section>
+  <section>
+          <h2><a id="lists" href="#lists"></a>Lists
+          </h2>
+          <p>The Unordered List : </p>
+          <ul>
+            <li>Unordered list-1</li>
+            <li>unordered list-2</li>
+            <li>unordered list-3</li>
+          </ul>
+          <p>The Ordered List : </p>
+          <ol>
+            <li>Ordered list-1</li>
+            <li>Ordered list-2</li>
+            <li>Ordered list-3</li>
+          </ol>
+          <p>description lists:</p>
+          <dl>
+            <dt>Description 1</dt>
+            <dd>Description data.</dd>
+            <dt>Description 2</dt>
+            <dd>DEscription data.</dd>
+            <dt>Description 3</dt>
+            <dd>Description data</dd>
+          </dl>
+
+  </section>
+   <section>
+          <h2><a id="tables" href="#tables"></a>Tables
+          </h2>
+          <p>Let's look at Apple, Microsoft & Google:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Table Title</th>
+                <th>Colomn 1</th>
+                <th>Colomn 2</th>
+                <th>Colomn 3</th>
+                <th>Colomn 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Row 1</th>
+                <td>Row data 1</td>
+                <td>Row data 2</td>
+                <td>Row data 3</td>
+                <td>Row data 4</td>
+              </tr>
+              <tr>
+                <th>Row 2</th>
+                <td>Row data 1</td>
+                <td>Row data 2</td>
+                <td>Row data 3</td>
+                <td>Row data 4</td>
+              </tr>
+              <tr>
+                <th>Row 3</th>
+                <td>Row data 1</td>
+                <td>Row data 2</td>
+                <td>Row data 3</td>
+                <td>Row data 4</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">Table Footer data </td>
+              </tr>
+            </tfoot>
+          </table>
+          
+  </section>
+    <section>
+          <h2><a id="forms" href="#forms" aria-hidden="true"></a>Forms
+          </h2>
+          <script>
+            function showOutput() {
+              document.getElementById('output').style.display = 'block';
+              document.getElementById('reset').disabled = false;
+            }
+            
+            function hideOutput() {
+              document.getElementById('output').style.display = 'none';
+              document.getElementById('reset').disabled = true;
+            }
+            
+          </script>
+          <form onsubmit="showOutput(); return false;" onreset="hideOutput()">
+            
+            
+              
+              <label for="full-name">Full Name</label>
+              <input id="full-name" type="text" value=" ">
+              <p>Sex<br>
+                <label><input type="radio" name="sex" checked>Male</label>
+                <label>
+                  <input type="radio" name="sex">Female
+                </label>
+              </p>
+              <label for="date">Date of birth</label>
+              <input id="date" type="date" value=" ">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" value=" ">
+              <label for="phone">Phone number</label>
+              <input id="phone" type="tel" placeholder="Numbers only">
+              <label for="country">Country</label>
+              <select id="country">
+                <option value="china">USA</option>
+                <option value="russia">Russia</option>
+                <option value="usa" selected>India</option>
+                <option value="russia">Japan</option>
+              </select>
+              <label for="about">Tell us about yourself</label>
+              <textarea id="about"></textarea>
+              
+             
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="Use strong password!">
+              <label>
+                <input type="checkbox" checked> <u>Note</u> : Above provided details are related to me.
+              </label><br>
+              <input type="submit" value="Submit">
+              <button id="reset" type="reset" disabled>Reset</button>
+              <output id="output" style="display: none">
+                <p>Successfully Submitted</p>
+              </output>
+            
+          </form>
+
+  </section>
+  <section>
+    <h2>Buttons</h2>
+    <button type="button" id="button">
+   <a href="#">Button</a>
+ </button><br>
+ <br> <br> 
+ <button type="button" id="button">
+   <a href="#">Button</a>
+ </button>
+  </section>
+  <hr>
+  <section>
+    <h3>Contact Us :</h3>
+
+    <button type="button" id="linkedin"><a href="https://www.linkedin.com/in/venkata-sai-nagarjuna-singarapu-b2229321a">Linked in</a></button>
+    <button type="button" id="github"><a href="https://github.com/Nagarjuna-Singarapu">Github</a></button>
+    <button type="button" id="twitter"><a href="https://twitter.com/Im_SVS_Nag?t=euF47psMb7tWv7S4HcY33Q&s=08">Twitter</a></button>
+    <button type="button" id="facebook"><a href="https://www.facebook.com/venkatasainagarjuna.singarapu">facebook</a></button>
+    <button type="button" id="instagram"><a href="https://www.instagram.com/invites/contact/?i=uwb5864evbps&utm_content=7wp3syf">Instagram</a></button>
+  </section>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top ▲</button>
+  <script>
+    //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+  
+    <hr>
+</body>
+</html>
